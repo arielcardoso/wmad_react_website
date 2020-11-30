@@ -8,8 +8,8 @@ import ImgBeaches from '../assets/images/city/beaches.jpg';
 import ImgFood from '../assets/images/city/food.jpg';
 import ImgHotels from '../assets/images/city/hotels.jpg';
 
-import ImgHotel1 from '../assets/images/services/hotels/01.jpg';
-import ImgHotel2 from '../assets/images/services/hotels/02.jpg';
+import ImgHotel1 from '../assets/images/services/hotel/01.jpg';
+import ImgHotel2 from '../assets/images/services/hotel/02.jpg';
 
 import ImgNews1 from '../assets/images/news/news_1.jpg';
 import ImgNews2 from '../assets/images/news/news_2.jpg';
