@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Container } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 
 import listItem from '../utils/HotelList'
 import ServiceCard from '../components/ServiceCard'

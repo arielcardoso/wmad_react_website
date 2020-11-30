@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { Container } from "@material-ui/core";
 
 import HotelList from '../utils/RestaurantList'
