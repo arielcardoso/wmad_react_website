@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Places from './pages/Places';
-import Services from './pages/Services';
 import Restaurants from './pages/Restaurants';
 import RestaurantDetails from './pages/RestaurantDetails';
 import Hotels from './pages/Hotels';

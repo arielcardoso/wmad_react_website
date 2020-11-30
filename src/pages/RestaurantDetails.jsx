@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link, Redirect } from "react-router-dom";
+import { Container } from "@material-ui/core";
+
 import RestaurantList from '../utils/RestaurantList'
 
 const RestaurantDetails = (props) => {
