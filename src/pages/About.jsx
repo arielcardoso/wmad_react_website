@@ -28,7 +28,7 @@ const About = () => {
                       <img src={ImgCity} className="shadow" alt="City of Vitoria" />
                       <p>
                           Learn more at:
-                          <a className="link" target="_blank" href="https://en.wikipedia.org/wiki/Vit%C3%B3ria,_Esp%C3%ADrito_Santo" >https://en.wikipedia.org/wiki/Vitória,_Espírito_Santo</a>
+                          <a className="link" target="_blank" href="https://en.wikipedia.org/wiki/Vit%C3%B3ria,_Esp%C3%ADrito_Santo" rel="noreferrer" >https://en.wikipedia.org/wiki/Vitória,_Espírito_Santo</a>
                       </p>
                   </section>
                   <section id="history">

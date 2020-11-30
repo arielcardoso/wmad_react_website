@@ -1,10 +1,6 @@
 import React from "react";
 import {
   Grid,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
   Container
 } from "@material-ui/core";
 

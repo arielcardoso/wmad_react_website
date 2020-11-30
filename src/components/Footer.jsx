@@ -13,10 +13,10 @@ const Footer = () => {
           </Grid>
           <Grid container item xs={3} sm={2} spacing={0} alignItems="center" justify="flex-end" >
             <div className="social">
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" >
                     <Facebook fontSize="large"/>
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" >
                   <Instagram fontSize="large"/>
                 </a>
             </div>

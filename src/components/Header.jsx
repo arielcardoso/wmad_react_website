@@ -29,19 +29,19 @@ const Header = () => {
                           </li>
                         ))}
                         <li className="dropdown" >
-                            <a href="#" className="dropdown" >Services</a>
+                            <a href="/" className="dropdown" >Services</a>
                             <div className="dropdown-menu" >
                               <Link to="/hotels" >Hotels & Inns</Link>
                               <Link to="/restaurants" >Restaurants</Link>
                             </div>
                         </li>
                     </ul>
-                    <a href="#" onclick="showModal('login-modal');" className="login">
-                      <PersonOutline fontSize="medium" />
-                    </a>
-                    <a href="#" className="btn-menu" id="btn-menu">
-                      <Menu fontSize="medium" />
-                    </a>
+                    <button onclick="showModal('login-modal');" className="login">
+                      <PersonOutline fontSize="large" />
+                    </button>
+                    <button button className="btn-menu" id="btn-menu">
+                      <Menu fontSize="large" />
+                    </button>
                 </nav>
             </div>
         </Container>

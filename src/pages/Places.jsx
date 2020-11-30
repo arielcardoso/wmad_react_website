@@ -20,7 +20,7 @@ const Places = () => {
                 <Grid item xs={12} sm={8} >
                     <h2>Paradise Beaches</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed nesciunt laborum ab eius error suscipit veritatis quaerat, ea officiis, perspiciatis ullam iste velit minima architecto non magnam? Voluptatem, alias?</p>
-                    <a href="#" className="btn btn-primary" >Read more</a>
+                    <a href="/" className="btn btn-primary" >Read more</a>
                 </Grid>
                 <Grid item xs={12} sm={4} >
                     <img src={ImgBeach} className="shadow" alt="Paradise Beaches" />
@@ -38,7 +38,7 @@ const Places = () => {
                 <Grid item xs={12} sm={8} >
                     <h2>City Parks</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed nesciunt laborum ab eius error suscipit veritatis quaerat, ea officiis, perspiciatis ullam iste velit minima architecto non magnam? Voluptatem, alias?</p>
-                    <a href="#" className="btn btn-primary" >Read more</a>
+                    <a href="/" className="btn btn-primary" >Read more</a>
                 </Grid>
             </Grid>
         </Container>
@@ -50,7 +50,7 @@ const Places = () => {
                 <Grid item xs={12} sm={8} >
                     <h2>Historic Church</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed nesciunt laborum ab eius error suscipit veritatis quaerat, ea officiis, perspiciatis ullam iste velit minima architecto non magnam? Voluptatem, alias?</p>
-                    <a href="#" className="btn btn-primary" >Read more</a>
+                    <a href="/" className="btn btn-primary" >Read more</a>
                 </Grid>
                 <Grid item xs={12} sm={4} >
                     <img src={ImgChurch} className="shadow" alt="Historic Church" />

@@ -55,7 +55,7 @@ const HotelDetails = (props) => {
                       <p>+55 27 3000-4000</p>
                       <h4>LOCATION</h4>
                       <p>1001 First Ave, Vitoria, Zip 29101-001<br/>Espirito Santo - Brazil</p>
-                      <a href="#" class="link" >View on map</a>
+                      <a href="/" class="link" >View on map</a>
                   </div>
                   <div class="image">
                       <img src="{item.image}" alt="{item.name}" />
