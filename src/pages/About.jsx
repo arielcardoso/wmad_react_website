@@ -96,9 +96,7 @@ const About = () => {
                           <a href="#map">Map</a>
                       </li>
                       <li>
-                          <a href="#" onclick="showModal('contact-modal');" >
-                              Contact
-                          </a>
+                          <a href='/' >Contact</a>
                       </li>
                   </ul>
               </div>
