@@ -1,0 +1,123 @@
+#hotels-page .page-header {
+  background: #c0935c url(../images/header_hotels.jpg) no-repeat center center;
+  background-size: cover;
+}
+#restaurants-page .page-header {
+  background: #9f2e01 url(../images/header_restaurants.jpg) no-repeat center center;
+  background-size: cover;
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  .service-item {
+    width: 32%;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Services Details */
+.service-detail {
+  display: flex;
+  justify-content: space-between;
+  .content {
+    flex: 2;
+  }
+  .image {
+    flex: 1;
+    margin-left: 30px;
+    img {
+      width: 100%;
+      display: block;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    }
+  }
+  .badget {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  .content h2 {
+    color: #0073BC;
+    font-weight: bold;
+  }
+  h4 {
+    font-weight: bold;
+    margin: 50px 0 0 0;
+  }
+}
+.service-reviews{
+  margin-top: 60px;
+  h2 {
+    color: #0073BC;
+    font-weight: bold;
+  }
+  .row {
+    display: flex;
+    align-items: flex-start;
+  }
+  .quotes {
+    width: 80px;
+    border-radius: 0;
+    margin: 20px 30px;
+  }
+  p {
+    text-align: justify;
+    line-height: 120%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Services List */
+  .services-list .service-item {
+    flex: 1;
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  /* Service Details */
+  .service-detail {
+    flex-wrap: wrap;
+    justify-content: center; 
+    .image {
+      flex: 1;
+      order: 0;
+      flex-basis: 100%;
+      margin: 0;
+    }
+    .content {
+      flex: 1;
+      order: 1;
+      flex-basis: 100%;
+    }
+    hr {
+      margin: 0;
+      height: 1px;
+    }
+  }
+  .service-reviews {
+    hr {
+      margin: 0px;
+      height: 1px;
+    }
+    .quotes {
+      width: 30px;
+      border-radius: 0;
+      margin: 20px 0 0 20px;
+    }
+    .badget {
+      font-size: 0.8rem;
+    }
+    h3 {
+      font-size: 1em;
+    }
+    p {
+      font-size: 0.8rem;
+      line-height: 140%;
+    }
+  }
+}

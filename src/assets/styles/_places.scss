@@ -1,0 +1,31 @@
+#places-page .page-header {
+  background: #163d03 url(../images/header_places.jpg) no-repeat center center;
+  background-size: cover;
+}
+#places-page .bg-light {
+  background-color: #f1f1f1;
+}
+#places-page a.btn {
+  display: inline-block;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 767px) {
+  #places-page .beaches .row,
+  #places-page .parks .row,
+  #places-page .church .row {
+      flex-wrap: wrap;
+  }
+  #places-page .beaches .row .col,
+  #places-page .parks .row .col,
+  #places-page .church .row .col {
+      flex-basis: 100%;
+  }
+  #places-page .beaches .row .col:first-child,
+  #places-page .church .row .col:first-child {
+      order: 1;
+  }
+  #places-page .beaches .row .col:last-child,
+  #places-page .church .row .col:last-child {
+      order: 0;
+  }
+}
