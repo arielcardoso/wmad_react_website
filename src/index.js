@@ -23,7 +23,6 @@ ReactDOM.render(
         <Route exact={true} path="/" component={Home} ></Route>
         <Route path="/about" component={About} />
         <Route path="/places" component={Places} />
-        <Route path="/services" component={Services} />
         <Route path="/restaurants" component={Restaurants} />
         <Route path="/restaurant/" component={RestaurantDetails} />
         <Route path="/hotels" component={Hotels} />
