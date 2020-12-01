@@ -26,11 +26,11 @@ const Home = () => {
 
       <section className="discover">
         <Container maxWidth="lg" >
-            <Grid container spacing={3} direction="row" alignItems="center" >
+            <Grid container spacing={3} spacing-xs={0} direction="row" alignItems="center" >
                 <Grid item xs={12} className="text-center" >
                     <h1 className="title-center">Discover the City</h1>
                 </Grid>
-                <Grid item xs={12} sm={4} >
+                <Grid item xs={4} >
                     <Link to="/places" className="place-img" >
                         <img src={ImgBeaches} className="shadow" alt="Paradise Places in Vitoria" />
                         <div className="content">
@@ -39,7 +39,7 @@ const Home = () => {
                         </div>
                     </Link>
                 </Grid>
-                <Grid item xs={12} sm={4} >
+                <Grid item xs={4} >
                     <Link to="/restaurants" className="place-img" >
                         <img src={ImgFood} className="shadow" alt="Traditional food in Vitoria" />
                         <div className="content">
@@ -48,7 +48,7 @@ const Home = () => {
                         </div>
                     </Link>
                 </Grid>
-                <Grid item xs={12} sm={4} >
+                <Grid item xs={4} >
                     <Link to="/hotels" className="place-img" >
                         <img src={ImgHotels} className="shadow" alt="Where to stay in Vitoria" />
                         <div className="content">
@@ -64,7 +64,7 @@ const Home = () => {
             <hr/>
         </Container>
 
-        <Container maxWidth="lg" >
+        <Container maxWidth="lg" className="hotels" >
             <Grid container spacing={4} direction="row" alignItems="center" >
                 <Grid item xs={12} sm={3} >
                     <img src={ImgHotel1} className="shadow" alt="Hotels" />

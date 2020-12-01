@@ -298,25 +298,19 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-    footer .row {
-        flex-wrap: wrap;
-        margin: 0;
-        .col {
-            flex-basis: 100%;
-            text-align: center;
-            &:first-child {
-                order: 1;
-            }
-            &:last-child {
-                order: 0;
-            }
-        }
+    footer {
         p {
             margin: 0;
-            font-size: 0.7rem;
+            font-size: 0.9rem;
+            text-align: center;
         }
         .social {
-            margin-bottom: 20px;
+            text-align: center;
+            a svg {
+                width: 3rem;
+                height: 3rem;
+                margin: 1rem 0.5rem;
+            }
         }
     }
 }

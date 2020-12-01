@@ -7,11 +7,11 @@ const Footer = () => {
     <footer>
       <Container maxWidth="lg" >
         <Grid container spacing={1} direction="row" >
-          <Grid container item xs={9} sm={10} spacing={1} direction="column"  >
+          <Grid item xs={12} sm={9} spacing={1} direction="column"  >
             <p>Designed for educatiotal purpose only.</p>
             <p>Images from joelmiranda.com / freepik.com</p>
           </Grid>
-          <Grid container item xs={3} sm={2} spacing={0} alignItems="center" justify="flex-end" >
+          <Grid item xs={12} sm={3} spacing={0} alignItems="center" justify="flex-end" >
             <div className="social">
                 <a href="https://facebook.com" target="_blank" rel="noreferrer" >
                     <Facebook fontSize="large"/>
