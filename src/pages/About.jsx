@@ -11,7 +11,7 @@ import IconAutumn from '../assets/images/icons/autumn.svg';
 import IconWinter from '../assets/images/icons/winter.svg';
 import IconSpring from '../assets/images/icons/spring.svg';
 
-const About = () => {
+const About = (props) => {
   return (
     <main id="about-page">
       <section className="page-header">
@@ -34,7 +34,7 @@ const About = () => {
                   <section id="history">
                       <h2>History</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed nesciunt laborum ab eius error suscipit veritatis quaerat, ea officiis, perspiciatis ullam iste velit minima architecto non magnam? Voluptatem, alias?</p>
-                      <Grid container direction="row" spacing="4" >
+                      <Grid container direction="row" spacing={3} >
                         <Grid item xs={12} sm={4} >
                             <img src={ImgHistory1} className="shadow" alt="History of Vitoria" />
                         </Grid>
@@ -50,9 +50,7 @@ const About = () => {
                   <section id="weather">
                       <h2>Climate</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed nesciunt laborum ab eius error suscipit veritatis quaerat, ea officiis, perspiciatis ullam iste velit minima architecto non magnam? Voluptatem, alias?</p>
-                      
-                      
-                      <Grid container direction="row" spacing="4" >
+                      <Grid container direction="row" spacing={3} >
                         <Grid item xs={6} sm={3} >
                             <img src={IconSummer} alt="Summer" />
                             <h3>Summer</h3>
@@ -96,7 +94,7 @@ const About = () => {
                           <a href="#map">Map</a>
                       </li>
                       <li>
-                          <a href='/' >Contact</a>
+                          <a href="#contact" onClick={props.openContactModal} >Contact</a>
                       </li>
                   </ul>
               </div>

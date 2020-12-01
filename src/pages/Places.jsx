@@ -16,7 +16,7 @@ const Places = () => {
 
       <section className="beaches">
         <Container maxWidth="lg" >
-            <Grid container direction="row" spacing="4" alignItems="center" >
+            <Grid container direction="row" spacing={3} alignItems="center" >
                 <Grid item xs={12} sm={8} >
                     <h2>Paradise Beaches</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed nesciunt laborum ab eius error suscipit veritatis quaerat, ea officiis, perspiciatis ullam iste velit minima architecto non magnam? Voluptatem, alias?</p>
@@ -31,7 +31,7 @@ const Places = () => {
 
       <section className="parks bg-light">
         <Container maxWidth="lg" >
-            <Grid container direction="row" spacing="4" alignItems="center" >
+            <Grid container direction="row" spacing={3} alignItems="center" >
                 <Grid item xs={12} sm={4} >
                     <img src={ImgPark} className="shadow" alt="City Parks" />
                 </Grid>
@@ -46,7 +46,7 @@ const Places = () => {
 
       <section className="church">
         <Container maxWidth="lg" >
-            <Grid container direction="row" spacing="4" alignItems="center" >
+            <Grid container direction="row" spacing={3} alignItems="center" >
                 <Grid item xs={12} sm={8} >
                     <h2>Historic Church</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed nesciunt laborum ab eius error suscipit veritatis quaerat, ea officiis, perspiciatis ullam iste velit minima architecto non magnam? Voluptatem, alias?</p>

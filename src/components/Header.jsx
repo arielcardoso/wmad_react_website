@@ -4,30 +4,25 @@ import { Container } from "@material-ui/core";
 import { PersonOutline, Menu } from "@material-ui/icons";
 import Logo from '../assets/images/logo.svg'
 
-const navLinks = [
-  { title: `Home`, path: `/`, exact: true },
-  { title: `About`, path: `/about` },
-  { title: `Places`, path: `/places` },
-];
-
-const Header = () => {
-
+const Header = (props) => {
   return (
     <header>
         <Container maxWidth="lg" >
             <div className="navbar">
                 <Link to="/" className="brand" >
-                  <img src={Logo} alt="City of Vitoria" />
+                    <img src={Logo} alt="City of Vitoria" />
                 </Link>
                 <nav>
                     <ul>
-                      {navLinks.map(({ title, path }) => (
-                          <li className="active">
-                            <Link to={path} >
-                              {title}
-                            </Link>
-                          </li>
-                        ))}
+                        <li>
+                            <Link to='/' >Home</Link>
+                        </li>
+                        <li>
+                            <Link to='/about' >About</Link>
+                        </li>
+                        <li>
+                            <Link to='/places' >Places</Link>
+                        </li>
                         <li className="dropdown" >
                             <a href="/" className="dropdown" >Services</a>
                             <div className="dropdown-menu" >
@@ -36,11 +31,11 @@ const Header = () => {
                             </div>
                         </li>
                     </ul>
-                    <button onclick="showModal('login-modal');" className="login">
-                      <PersonOutline fontSize="large" />
+                    <button type="button" onClick={props.openLoginModal} className="login">
+                        <PersonOutline fontSize="large" />
                     </button>
-                    <button button className="btn-menu" id="btn-menu">
-                      <Menu fontSize="large" />
+                    <button type="button" className="btn-menu" id="btn-menu">
+                        <Menu fontSize="large" />
                     </button>
                 </nav>
             </div>
