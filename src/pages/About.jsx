@@ -74,9 +74,9 @@ const About = (props) => {
                       </Grid>
                   </section>
                   <section id="map">
-                      <h2>Map</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <img src={ImgCityMap} alt="City of Vitoria" />
+                    <h2>Map</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59878.985475469985!2d-40.32080896128782!3d-20.282188053150414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2sVitoria%2C%20Vit%C3%B3ria%20-%20State%20of%20Esp%C3%ADrito%20Santo!5e0!3m2!1sen!2sbr!4v1606802657781!5m2!1sen!2sbr" width="100%" height="450" frameborder="0" style={{border:'0'}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                   </section>
               </div>
               <div className="page-sidebar">

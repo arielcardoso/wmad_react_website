@@ -7,8 +7,12 @@
 #about-page #map p {
     text-align: justify;
 }
-#about-page #weather h3 {
+#about-page #weather {
     margin: 0;
+}
+#about-page #weather .MuiGrid-item,
+#about-page #weather .MuiGrid-item p {
+    text-align: center;
 }
 #about-page #weather .row .col-4 p {
     text-align: center;
