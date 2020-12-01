@@ -195,22 +195,27 @@ header {
     }
 }
 @media only screen and (max-width: 767px) {
-    nav button.btn-menu {
-        padding-right: 10px;
-        display: inline;
+    header nav {
+        margin-top: 0.7rem;
+        align-items: center;
+        button svg {
+            margin-top: 0.5rem;
+        }
+        button.btn-menu {
+            padding-right: 10px;
+            margin-right: -10px;
+            display: inline-block;
+        }
+        ul {
+            display: none;
+            opacity: 0.0;
+        }
+        a.login {
+            margin-bottom: 0;
+        }
     }
     header .brand img {
         width: 140px;
-    }
-    header .navbar {
-        align-items: center;
-    }
-    header nav ul {
-        display: none;
-        opacity: 0.0;
-    }
-    nav a.login {
-        margin-bottom: 0;
     }
     .page-header {
         background-size: auto 100% !important;

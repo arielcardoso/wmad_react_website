@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Container } from "@material-ui/core";
 import { PersonOutline, Menu } from "@material-ui/icons";
 import Logo from '../assets/images/logo.svg'
 
 const Header = (props) => {
+  const [responsiveMenu, setResponsiveMenu] = useState(false)
+  
+  const toggleResponsiveMenu = () => {
+    setResponsiveMenu(!responsiveMenu);
+  }
+
   return (
     <header>
         <Container maxWidth="lg" >
@@ -12,7 +18,7 @@ const Header = (props) => {
                 <Link to="/" className="brand" >
                     <img src={Logo} alt="City of Vitoria" />
                 </Link>
-                <nav>
+                <nav className={responsiveMenu && 'collapsed'} >
                     <ul>
                         <li>
                             <Link to='/' >Home</Link>
@@ -34,7 +40,7 @@ const Header = (props) => {
                     <button type="button" onClick={props.openLoginModal} className="login">
                         <PersonOutline fontSize="large" />
                     </button>
-                    <button type="button" className="btn-menu" id="btn-menu">
+                    <button onClick={toggleResponsiveMenu} type="button" className="btn-menu" id="btn-menu">
                         <Menu fontSize="large" />
                     </button>
                 </nav>
