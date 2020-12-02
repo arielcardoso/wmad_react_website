@@ -149,11 +149,12 @@ header {
 .page-header {
     color: #fff;
     background-color: #062d7e;
-    padding: 0;
+    padding: 1.5rem 0;
     box-shadow: 0 6px 15px rgba(0,0,0, 0.2);
     .MuiContainer-root {
-        justify-content: space-between;
-        height: 150px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         position: relative;
         .col:last-child {
             text-align: right;
@@ -163,21 +164,15 @@ header {
             }
         }
     }
-    h1 {
-        font-size: 3rem;
-        font-weight: 500;
+    h1, h2 {
         margin: 0;
-        padding-top: 70px;
-        text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
-    }
-    h2 {
-        font-size: 2rem;
+        padding: 0px;
         font-weight: bold;
-        margin: 0;
         text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
     }
     p {
         margin: 0;
+        padding: 0;
         font-size: 1.3rem;
         text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
     }
@@ -185,9 +180,6 @@ header {
 
 /* Responsive Layout */
 @media only screen and (max-width: 991px) {
-    .page-header .row {
-        height: 100px;
-    }
     nav button.login, 
     nav button.btn-menu {
         padding: 20px;
@@ -220,39 +212,13 @@ header {
     .page-header {
         background-size: auto 100% !important;
         h1 {
-            padding: 20px 0;
-            margin: 0;
-            text-align: left;
             font-size: 1.8rem;    
-        }
-        .row {
-            height: auto;
-            flex-wrap: wrap;
-            .col {
-                flex-basis: 100%;
-            }
         }
         h2 {
             font-size: 1.3rem;
-            margin-bottom: 10px
         }
         p {
             font-size: 1rem;
-            letter-spacing: 1px;
-            margin-top: 10px;
-        }
-        .reviews {
-            display: block;
-            flex: none;
-            position: absolute;
-            top: 12px;
-            right: 0;
-            p {
-                display: none;
-            }
-            .ratings i {
-                font-size: 1rem;
-            }
         }
     }
 }
