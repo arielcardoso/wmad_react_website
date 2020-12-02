@@ -316,40 +316,6 @@ footer {
 }
 
 /* Login */
-.modal form {
-    .btn {
-        display: block;
-        width: 100%;
-        margin-top: 15px;
-        padding: 12px 0;
-    }
-    input {
-        width: 100%;
-        background: #eee;
-        margin-bottom: 5px;
-    }
-    hr {
-        margin: 0;
-    }
-    .row {
-        margin: 0 -5px;
-        .col-1,
-        .col-2 {
-            padding: 0 5px;
-        }
-    }
+form .MuiTextField-root {
+    margin-bottom: 1.5rem;
 }
-
-/* Animations */
-@keyframes fadeAndScale {
-    from {
-        opacity: 0;
-        transform: scale(.9, .9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1, 1);
-    }
-}
-
-

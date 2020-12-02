@@ -1,5 +1,6 @@
 import React, { forwardRef, useImperativeHandle } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Typography, TextField, Button } from '@material-ui/core';
 
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -16,6 +17,8 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: '2rem',
+    width: '90%',
+    maxWidth: '400px',
   },
 }));
 
@@ -53,21 +56,12 @@ const LoginModal = forwardRef((props, ref) => {
       >
         <Fade in={open}>
           <div className={classes.paper} >
-            <h2>LOGIN</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <Typography variant="h4" component="h4" gutterBottom>LOGIN</Typography>
             <form action="post" >
-              <div className="row">
-                  <div className="col-1">
-                      <input type="text" placeholder="Username" />
-                  </div>
-              </div>
-              <div className="row">
-                  <div className="col-1">
-                      <input type="text" placeholder="Password" />
-                  </div>
-              </div>
-              <hr/>
-              <button className="btn btn-primary">Login</button>
+              <TextField id="loginUsername" label="Username" fullWidth />
+              <TextField id="loginPassword" label="Password" fullWidth />
+              <a href="/" style={{margin:'-10px 0 10px', display:'block', fontSize:'0.8rem', textAlign:'right' }} >Forgot password?</a>
+              <Button fullWidth type="submit" variant="contained" color="primary" >LOGIN</Button>
             </form>
           </div>
         </Fade>

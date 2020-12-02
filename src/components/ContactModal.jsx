@@ -1,5 +1,6 @@
 import React, { forwardRef, useImperativeHandle } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Typography, TextField, Button } from '@material-ui/core';
 
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -16,6 +17,8 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: '2rem',
+    width: '90%',
+    maxWidth: '500px',
   },
 }));
 
@@ -53,34 +56,15 @@ const ContactModal = forwardRef((props, ref) => {
       >
         <Fade in={open}>
           <div className={classes.paper} >
-            <h2>CONTACT</h2>
+            <Typography variant="h4" component="h4" gutterBottom>CONTACT</Typography>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             <form action="post">
-                <div className="row">
-                    <div className="col-1">
-                        <input type="text" placeholder="Full Name" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-2">
-                        <input type="text" placeholder="E-mail" />
-                    </div>
-                    <div className="col-2">
-                        <input type="text" placeholder="Phone" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-1">
-                        <input type="text" placeholder="Subject" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-1">
-                        <input type="text" placeholder="Message" />
-                    </div>
-                </div>
-                <hr/>
-                <button className="btn btn-primary">Send message</button>
+              <TextField id="fullName" label="Fullname" fullWidth />
+              <TextField id="email" label="Email" fullWidth />
+              <TextField id="phone" label="Phone" fullWidth />
+              <TextField id="subject" label="Subject" fullWidth />
+              <TextField id="message" label="Message" fullWidth />
+              <Button type="submit" variant="contained" color="primary" >SEND MESSAGE</Button>
             </form>
           </div>
         </Fade>
