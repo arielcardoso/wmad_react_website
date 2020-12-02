@@ -38,9 +38,9 @@ const App = () => {
         </Route>
         <Route path="/places" component={Places} />
         <Route path="/restaurants" component={Restaurants} />
-        <Route path="/restaurant/" component={RestaurantDetails} />
+        <Route path="/restaurant/:id" component={RestaurantDetails} />
         <Route path="/hotels" component={Hotels} />
-        <Route path="/hotel/" component={HotelDetails} />
+        <Route path="/hotel/:id" component={HotelDetails} />
       </Switch>
       <Footer/>
 

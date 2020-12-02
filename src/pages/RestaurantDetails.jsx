@@ -2,11 +2,11 @@ import React from 'react';
 import { Redirect } from "react-router-dom";
 import { Container } from "@material-ui/core";
 
-import RestaurantList from '../utils/RestaurantList'
+import RestaurantList from '../utils/RestaurantList';
+import Quotes from '../assets/images/icons/quotes.svg';
 
 const RestaurantDetails = (props) => {
-  let id = props.match.params.id;
-  console.log("ID : ", id);
+  const id = props.match.params.id;
 
   if (isNaN(id)) {
     return(
@@ -20,20 +20,8 @@ const RestaurantDetails = (props) => {
     <main id="restaurant-info-page">
       <section class="page-header">
           <Container maxWidth="lg" >
-            <div class="col">
-                <p>Restaurant</p>
-                <h2>{item.name}</h2>
-            </div>
-            <div class="col reviews">
-                <div class="ratings">
-                    <i class="fas fa-star active"></i>
-                    <i class="fas fa-star active"></i>
-                    <i class="fas fa-star active"></i>
-                    <i class="fas fa-star active"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>2 Reviews</p>
-            </div>
+            <p>Restaurant</p>
+            <h2>{item.name}</h2>
           </Container>
       </section>
       <section>
@@ -52,17 +40,16 @@ const RestaurantDetails = (props) => {
                       <p>+55 27 3000-4000</p>
                       <h4>LOCATION</h4>
                       <p>220 Main Ave, Vitoria, Zip 29210-100<br/>Espirito Santo - Brazil</p>
-                      <a href="/" class="link" >View on map</a>
                   </div>
                   <div class="image">
-                      <img src="{item.image}" alt="{item.name}" />
+                      <img src={item.image} alt={item.name} />
                   </div>
               </div>
               <div class="service-reviews">
                   <h2>USER REVIEWS</h2>
                   <hr/>
                   <div class="row">
-                      <img class="quotes" src="assets/img/icons/quotes.svg" alt="Comments" />
+                      <img class="quotes" src={Quotes} alt="Comments" />
                       <div class="col">
                           <h3>Lorem ipsum</h3>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet excepturi placeat facilis, deleniti voluptate accusamus natus aspernatur dolorem sit, cupiditate consequuntur quis? Veritatis laborum eius dolorem velit, molestias perferendis.</p>
